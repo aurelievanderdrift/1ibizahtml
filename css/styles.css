@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+main p{
+    font-family: 'Rajdhani', Arial, sans-serif;
+    font-size: 1.2em;
+    padding-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 1em;
+    }
+
+
+nav a {
+    color: black;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+
+nav a:hover {
+    color: #ed7041;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+
+header {
+    background-color: #f2efde ;
+}
+
+body {
+    background-color: #f2efde;
+    background-size: 100%;
+    min-width: 700px;  
+}
+
+
+header nav ul {
+display: flex;
+list-style: none;
+padding: 0.5em
+}
+
+header ul li a {
+    margin: 1em;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    height: 2em;
+}
+
+h1 {
+
+    font-family: 'Poiret One', cursive;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main h2 {
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 0.5em;
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+
+main h3 {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+
+main section div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    max-width: 100%;
+    height: auto;
+}
+
+div section a {
+    font-family: 'Rajdhani', Arial, sans-serif;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none; 
+    padding: 5px 10px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div section a:hover {
+    font-family: 'Rajdhani', Arial, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none; 
+    background-color: #ed7041; 
+    padding: 5px 10px;
+}
+
+.over h3 {
+    font-family: 'Poiret One', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.over section a {
+    display: block;
+    width: fit-content;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+.over section a:hover {
+    background-color: #ed7041;
+    color: white;
+}
+
+.over p {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/* Bounce animatie gebaseerd op voorbeeld van W3Schools:
+   https://www.hongkiat.com/blog/css3-bounce-effect/ */
+
+.artikel section h2 {
+    animation-name: bounceartikel;
+    animation-duration: 1.5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes bounceartikel {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.artikel p {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/*hieronder heb ik een Image Gallery with Horizontal Scroll gemaakt. Bron: https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp */
+
+div.scroll-container {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: white;
+  }
+  
+  div.scroll-container img {
+    padding: 1em;
+    max-width: 30%
+  }
+ 
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1em; 
+  }
+
+.grid-container img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+    filter:blur(2px)
+  }
+  
+  .grid-container img:hover {
+    transform: scale(1.05); 
+    filter: none;
+  }
+
+/* bovenstaand effect heb ik gemaakt doormiddel van de volgende bron: https://www.w3schools.com/howto/howto_css_blurred_background.asp (alleen het blur-effect gebruikt)en https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+
+.fotoboek h2 {
+font-family: 'Rajdhani', Arial, sans-serif;
+font-size: 1.5em;
+font-weight: lighter;
+text-transform: none;
+padding: 1em;
+margin-top: 1em;
+margin-bottom: 1em;
+background-color: #fff;
+text-align: center;
+}
+
+.artikel img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.index img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    font-family: 'Rajdhani', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    background-color: white;
+    padding: 0.5em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
